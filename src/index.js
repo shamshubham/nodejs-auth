@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
-app.use("/auth", authRoutes);
+app.use("/api/v1/auth", authRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
